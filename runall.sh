@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-function getContainerPort() {
-    echo $(docker port $1 | sed 's/.*://g')
-}
 
 if [ ! -d downloads ]; then
     mkdir downloads
@@ -14,8 +11,6 @@ fi
 docker build -t myjenkins .
 
 docker run  -d --rm -p 8081:8081 --name artifactory  docker.bintray.io/jfrog/artifactory-oss:5.4.4
-docker run -d -p 7990:7990 --name bitbucket blacklabelops/bitbucket
-artifactory_port=$(getContainerPort artifactory)
 
 IP='localhost'
 
@@ -31,4 +26,3 @@ docker run -d -p 8080:8080 -v `pwd`/downloads:/var/jenkins_home/downloads \
 
 echo "Artifactory is running at http://localhost:8081"
 echo "Jenkins is running at http://localhost:8080"
-echo "Bitbucket is running at http://localhost:7990"

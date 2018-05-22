@@ -1,0 +1,43 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.18">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.53">
+    <parentIds>
+      <string>7</string>
+    </parentIds>
+    <id>8</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.scm.GenericSCMStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.27">
+      <startTime>1526995316294</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogActionImpl>
+      <charset>UTF-8</charset>
+    </s.a.LogActionImpl>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.53">
+      <arguments>
+        <entry>
+          <string>scm</string>
+          <hudson.plugins.git.GitSCM plugin="git@3.9.0">
+            <configVersion>2</configVersion>
+            <userRemoteConfigs>
+              <hudson.plugins.git.UserRemoteConfig>
+                <url>https://gitlab.com/a4sh3u/mda_test.git</url>
+                <credentialsId>8c0025eb-7318-426b-891e-b00e9aec1894</credentialsId>
+              </hudson.plugins.git.UserRemoteConfig>
+            </userRemoteConfigs>
+            <branches>
+              <hudson.plugins.git.BranchSpec>
+                <name>*/master</name>
+              </hudson.plugins.git.BranchSpec>
+            </branches>
+            <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+            <submoduleCfg class="list"/>
+            <extensions/>
+          </hudson.plugins.git.GitSCM>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+  </actions>
+</Tag>

@@ -1,0 +1,171 @@
+Started by user unknown or anonymous
+Obtained Jenkinsfile from git https://gitlab.com/a4sh3u/mda_test.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4LQ3K7iNT4o4yvzEZ4kBdfiNhLeGl9OXGCZ2+0Vne95hAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/jobs/test_artifactory_release/workspace
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (Print-Info)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Print-Info
+Proceeding
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[workspace] Running shell script
++ printenv
+JENKINS_HOME=/var/jenkins_home
+JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
+RUN_CHANGES_DISPLAY_URL=http://unconfigured-jenkins-location/job/test_artifactory_release/2/display/redirect?page=changes
+HOSTNAME=157cf929d204
+NODE_LABELS=master
+SHLVL=0
+HOME=/var/jenkins_home
+HUDSON_COOKIE=7a7eb7c2-82b8-428d-84fa-fb4808d4ba6c
+JENKINS_SERVER_COOKIE=durable-d89f4225d75ef3a106274051b86ed095
+JENKINS_UC=https://updates.jenkins.io
+WORKSPACE=/var/jenkins_home/jobs/test_artifactory_release/workspace
+JAVA_VERSION=8u171
+NODE_NAME=master
+CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+EXECUTOR_NUMBER=0
+JENKINS_VERSION=2.122
+BUILD_DISPLAY_NAME=#2
+HUDSON_HOME=/var/jenkins_home
+JOB_BASE_NAME=test_artifactory_release
+JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+BUILD_ID=2
+JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+BUILD_TAG=jenkins-test_artifactory_release-2
+LANG=C.UTF-8
+BUILD_NUMBER=2
+JENKINS_NODE_COOKIE=4b76a521-93e6-4118-bcd0-60959b182915
+RUN_DISPLAY_URL=http://unconfigured-jenkins-location/job/test_artifactory_release/2/display/redirect
+JENKINS_SLAVE_AGENT_PORT=50000
+HUDSON_SERVER_COOKIE=bda722df561249bc
+JOB_DISPLAY_URL=http://unconfigured-jenkins-location/job/test_artifactory_release/display/redirect
+JOB_NAME=test_artifactory_release
+COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
+JAVA_HOME=/docker-java-home
+PWD=/var/jenkins_home/jobs/test_artifactory_release/workspace
+ARTIFACTORY_URL=http://localhost:8081/artifactory/example-repo-local
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (Checkout)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Checkout
+Proceeding
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://gitlab.com/a4sh3u/mda_test.git # timeout=10
+Fetching upstream changes from https://gitlab.com/a4sh3u/mda_test.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.com/a4sh3u/mda_test.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6294b9a5846635449ea5bf6b85b59b6f113b3351 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6294b9a5846635449ea5bf6b85b59b6f113b3351
+Commit message: "added proper deploy"
+ > git rev-list --no-walk 6294b9a5846635449ea5bf6b85b59b6f113b3351 # timeout=10
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (Deploy)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Deploy
+Proceeding
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[workspace] Running shell script
++ mvn clean deploy
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] mda
+[INFO] smava-dal
+[INFO] commons-domain
+[INFO] dal-util
+[INFO] account-dal-api
+[INFO] account-dal
+[INFO] marketing-dal
+[INFO] formbeans
+[INFO] marketing-formbeans
+[INFO] webapp-formbeans
+[INFO] account-formbeans
+[INFO] util-formbeans
+[INFO] brokerage-dal-api
+[INFO] brokerage-dal
+[INFO] ruleengine-dal
+[INFO] statistic-dal
+[INFO] arvato-dal
+[INFO] ident-dal
+[INFO] casi-dal
+[INFO] applicant
+[INFO] applicant-data-dal
+[INFO] applicant-account-dal
+[INFO] applicant-brokerage-dal-api
+[INFO] applicant-brokerage-dal
+[INFO] applicant-ident-dal
+[INFO] applicant-marketing-dal
+[INFO] applicant-casi-dal
+[INFO] resources
+[INFO] resources-dal
+[INFO] casi-parent-dal
+[INFO] advisor-dal
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mda 3.197-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://artifactory.smava.de/artifactory/plugins-release/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+[WARNING] Failed to create parent directories for tracking file /var/jenkins_home/.m2/repository/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom.lastUpdated
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+[WARNING] Failed to create parent directories for tracking file /var/jenkins_home/.m2/repository/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom.lastUpdated
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] mda ................................................ FAILURE [  0.159 s]
+[INFO] smava-dal .......................................... SKIPPED
+[INFO] commons-domain ..................................... SKIPPED
+[INFO] dal-util ........................................... SKIPPED
+[INFO] account-dal-api .................................... SKIPPED
+[INFO] account-dal ........................................ SKIPPED
+[INFO] marketing-dal ...................................... SKIPPED
+[INFO] formbeans .......................................... SKIPPED
+[INFO] marketing-formbeans ................................ SKIPPED
+[INFO] webapp-formbeans ................................... SKIPPED
+[INFO] account-formbeans .................................. SKIPPED
+[INFO] util-formbeans ..................................... SKIPPED
+[INFO] brokerage-dal-api .................................. SKIPPED
+[INFO] brokerage-dal ...................................... SKIPPED
+[INFO] ruleengine-dal ..................................... SKIPPED
+[INFO] statistic-dal ...................................... SKIPPED
+[INFO] arvato-dal ......................................... SKIPPED
+[INFO] ident-dal .......................................... SKIPPED
+[INFO] casi-dal ........................................... SKIPPED
+[INFO] applicant .......................................... SKIPPED
+[INFO] applicant-data-dal ................................. SKIPPED
+[INFO] applicant-account-dal .............................. SKIPPED
+[INFO] applicant-brokerage-dal-api ........................ SKIPPED
+[INFO] applicant-brokerage-dal ............................ SKIPPED
+[INFO] applicant-ident-dal ................................ SKIPPED
+[INFO] applicant-marketing-dal ............................ SKIPPED
+[INFO] applicant-casi-dal ................................. SKIPPED
+[INFO] resources .......................................... SKIPPED
+[INFO] resources-dal ...................................... SKIPPED
+[INFO] casi-parent-dal .................................... SKIPPED
+[INFO] advisor-dal ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.415 s
+[INFO] Finished at: 2018-05-22T13:24:05+00:00
+[INFO] Final Memory: 17M/607M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin org.apache.maven.plugins:maven-jar-plugin:2.4 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-jar-plugin:jar:2.4: Could not transfer artifact org.apache.maven.plugins:maven-jar-plugin:pom:2.4 from/to artifactory.smava.de (http://artifactory.smava.de/artifactory/plugins-release/): /var/jenkins_home/.m2/repository/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom.part.lock (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4GR0FviLqlIxDI4+UsAx6nwfMal0E0Sgh8KUtS89ZErUAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
