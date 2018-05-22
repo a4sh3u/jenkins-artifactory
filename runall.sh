@@ -9,20 +9,18 @@ if [ ! -d downloads ]; then
 fi
 
 docker build -t myjenkins .
-
-docker run  -d --rm -p 8081:8081 --name artifactory  docker.bintray.io/jfrog/artifactory-oss:5.4.4
+docker network create ja
+docker run  -d --rm -p 8081:8081 --network ja --name artifactory  docker.bintray.io/jfrog/artifactory-oss:5.4.4
 
 IP='localhost'
 
 if [ ! -d m2deps ]; then
-    mkdir m2deps
+    mkdir m2deps; sudo chown -R 1000:1000 jobs m2deps
 fi
 
-docker run -d -p 8080:8080 -v `pwd`/downloads:/var/jenkins_home/downloads \
-    -v `pwd`/jobs:/var/jenkins_home/jobs/ \
-    -v `pwd`/m2deps:/var/jenkins_home/.m2/repository/ --rm --name myjenkins \
-    -e ARTIFACTORY_URL=http://localhost:8081/artifactory/example-repo-local \
-    myjenkins:latest
+docker run -d -p 8080:8080 --network ja -v `pwd`/downloads:/var/jenkins_home/downloads \
+    -v `pwd`/jobs:/var/jenkins_home/jobs/ -v `pwd`/m2deps:/var/jenkins_home/.m2/repository/ --rm --name myjenkins \
+    -e ARTIFACTORY_URL=http://localhost:8081/artifactory/example-repo-local myjenkins:latest
 
 echo "Artifactory is running at http://localhost:8081"
 echo "Jenkins is running at http://localhost:8080"
