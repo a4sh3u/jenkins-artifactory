@@ -8,6 +8,7 @@ if [ ! -d downloads ]; then
     curl -o downloads/apache-maven-3.5.0-bin.tar.gz http://apache.mirror.anlx.net/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
 fi
 
+cp ~/.ssh/id_rsa .
 docker build -t myjenkins .
 docker network create ja
 docker run  -d --rm -p 8081:8081 --network ja --name artifactory  docker.bintray.io/jfrog/artifactory-oss:5.4.4
