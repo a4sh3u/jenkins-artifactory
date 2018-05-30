@@ -23,5 +23,6 @@ docker run -d -p 8080:8080 --network ja -v `pwd`/downloads:/var/jenkins_home/dow
     -v `pwd`/jobs:/var/jenkins_home/jobs/ -v `pwd`/m2deps:/var/jenkins_home/.m2/repository/ --rm --name myjenkins \
     -e ARTIFACTORY_URL=http://localhost:8081/artifactory/example-repo-local myjenkins:latest
 
+chown -R 1000:1000 /var/jenkins_home
 echo "Artifactory is running at http://localhost:8081"
 echo "Jenkins is running at http://localhost:8080"
